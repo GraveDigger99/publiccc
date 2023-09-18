@@ -3905,7 +3905,6 @@
             slidesPerView: 3,
             spaceBetween: 20,
             speed: 800,
-            loop: true,
             navigation: {
                 prevEl: ".coaching__prev",
                 nextEl: ".coaching__next"
