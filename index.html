@@ -5,7 +5,7 @@
 	<title>Главная</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230918125714">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230919010106">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -29,20 +29,21 @@
 							</ul>
 						</nav>
 					</div>
-					<a data-da=".menu__list,767.98,last" href="#" class="social-telegram">Telegram</a>
+					<a target="_blank" data-da=".menu__list,767.98,last" href="https://t.me/bfgodunoff" class="social-telegram">Telegram</a>
 				</div>
 			</div>
 		</header>
+
 		<main class="page">
 			<section data-fullscreen class="hero">
 				<div class="hero__container">
 					<div class="hero__content">
-						<div class="hero__inner">
-							<h1 class="hero__title title">Александр Зайцев</h1>
-							<p class="hero__description">
+						<div data-watch class="hero__inner">
+							<h1 data-watch data-watch-once data-transform-to-top class="hero__title title">Александр Зайцев</h1>
+							<p data-watch data-watch-once data-transform-to-top-delay class="hero__description">
 								Executive коуч, ведущий стратегических сессий
 							</p>
-							<p class="hero__text">
+							<p data-watch data-watch-once data-transform-to-top-delay class="hero__text">
 								Для собственников бизнеса и топ-менеджеров
 							</p>
 							<ul hidden class="hero__list">
@@ -66,14 +67,15 @@
 				</div>
 			</section>
 			<section class="video">
-				<div class="video-block">
-					<div class="video-block-screen">
-						<picture><source srcset="img/video/main.webp" type="image/webp"><img src="img/video/main.png" alt="Посмотрите наше видео" /></picture>
-						<a href="#" class="video-block-play" data-video="6zxl-yDY6oQ"></a>
-					</div>
-					<div class="video-block-iframe"></div>
-					<div class="video-block__container">
-						<span class="video-block__des">...как говорил Сенека: «Docendo discimus»</span>
+				<div class="video__container">
+					<div class="video-block">
+						<div id="player"></div>
+						<div data-video="6zxl-yDY6oQ" data-id="player" class="to-play">
+							<picture><source srcset="img/video/main.webp" type="image/webp"><img src="img/video/main.jpg" alt="icon"></picture>
+						</div>
+						<div class="video-block__container">
+							<span class="video-block__des">...как говорил Сенека: «Docendo discimus»</span>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -81,12 +83,12 @@
 				<section class="reviews">
 					<div class="reviews__container">
 						<div class="reviews__content">
-							<h2 class="reviews__subtitle subtitle">Отзывы и рекомендации</h2>
-							<a target="_blank" href="img/reviews/image-big.jpg" class="reviews__recom">
+							<h2 data-watch data-watch-once data-transform-to-top-long class="reviews__subtitle subtitle">Отзывы и рекомендации</h2>
+							<a data-watch data-watch-once data-transform-to-top-delay target="_blank" href="img/reviews/image-big.jpg" class="reviews__recom">
 								<div class="reviews__icon">
 									<img src="img/reviews/arrow-right.svg" alt="icon">
 								</div>
-								c Министра финансов РФ
+								Благодарность Министра финансов РФ
 							</a>
 							<div class="reviews__inner">
 								<a target="_blank" href="img/reviews/image-big.jpg" class="reviews__image">
@@ -102,7 +104,16 @@
 								</div>
 							</div>
 							<div data-da=".reviews__container,991.98,last" class="reviews__decor">
-								<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+								<span data-goto=".hero" data-goto-header></span>
+								<span data-goto=".video" data-goto-header></span>
+								<span data-goto=".reviews" data-goto-header></span>
+								<span data-goto=".coaching" data-goto-header></span>
+								<span data-goto=".strategic-sessions" data-goto-header></span>
+								<span data-goto=".clients" data-goto-header></span>
+								<span data-goto=".book" data-goto-header></span>
+								<span data-goto=".publishing" data-goto-header></span>
+								<span data-goto=".faq" data-goto-header></span>
+								<span data-goto=".contacts" data-goto-header></span>
 							</div>
 						</div>
 						<div class="reviews__slider swiper">
@@ -110,22 +121,23 @@
 								<div class="reviews__slide swiper-slide slide-reviews">
 									<div class="slide-reviews__top">
 										<div class="slide-reviews__avatar">
-											<picture><source srcset="img/reviews/01.webp" type="image/webp"><img src="img/reviews/01.png" alt="image"></picture>
+											<picture><source srcset="img/reviews/11.webp" type="image/webp"><img src="img/reviews/11.jpg" alt="image"></picture>
 										</div>
 										<div class="slide-reviews__info">
 											<div class="slide-reviews__wrapper">
-												<div class="slide-reviews__name">Иван Чебесков</div>
-												<div class="slide-reviews__role">Директор департамента финансовой политики МИНФИНа
-													России</div>
+												<div data-swiper-parallax-opacity="0.5" data-swiper-parallax="-100" class="slide-reviews__name">ИВАН ЧЕБЕСКОВ</div>
+												<div data-swiper-parallax-opacity="0.5" data-swiper-parallax="-150" class="slide-reviews__role">ДИРЕКТОР ДЕПАРТАМЕНТА ФИНАНСОВОЙ ПОЛИТИКИ МИНФИНА
+													РОССИИ</div>
 											</div>
 										</div>
 									</div>
-									<div class="slide-reviews__text">
+									<div data-swiper-parallax-opacity="0.5" data-swiper-parallax="-200" class="slide-reviews__text">
 										Выражаю благодарность команде АО «ТТ-Территория Тренинга» и лично Александру Борисовичу за
 										подготовку и проведение
 										20.03.2021г. Стратегической сессии по разработке Стратегии развития финансового рынка
 										Российской Федерации до 2030г.
-										Особенно хочется отметить высокий профессионализм лично Александра Борисовича при подготовке
+										Особенно хочется отметить высокий профессионализм лично Александра Борисовича при
+										подготовке
 										спикеров к стратегической
 										сессии, модерации основной части и панельной дискуссии, а также организации масштабного
 										мозгового штурма в десяти
@@ -135,21 +147,47 @@
 								<div class="reviews__slide swiper-slide slide-reviews">
 									<div class="slide-reviews__top">
 										<div class="slide-reviews__avatar">
-											<picture><source srcset="img/reviews/01.webp" type="image/webp"><img src="img/reviews/01.png" alt="image"></picture>
+											<picture><source srcset="img/reviews/02.webp" type="image/webp"><img src="img/reviews/02.png" alt="image"></picture>
 										</div>
 										<div class="slide-reviews__info">
 											<div class="slide-reviews__wrapper">
-												<div class="slide-reviews__name">Иван Чебесков</div>
-												<div class="slide-reviews__role">Директор департамента финансовой политики МИНФИНа
-													России</div>
+												<div data-swiper-parallax-opacity="0.5" data-swiper-parallax="-100" class="slide-reviews__name">ЕГОР ПАВЛОВ</div>
+												<div data-swiper-parallax-opacity="0.5" data-swiper-parallax="-150" class="slide-reviews__role">ВИЦЕ-ПРЕЗИДЕНТ - НАЧАЛЬНИК ДЕПАРТАМЕНТА ВНУТРЕННЕГО
+													КАЗНАЧЕЙСТВА АО ГАЗПРОМБАНК</div>
 											</div>
 										</div>
 									</div>
-									<div class="slide-reviews__text">
-										Выражаю благодарность команде АО «ТТ-Территория Тренинга» и лично Александру Борисовичу за
-										подготовку и проведение
-										20.03.2021г. Стратегической сессии по разработке Стратегии развития финансового рынка
-										Российской Федерации до 2030г.
+									<div data-swiper-parallax-opacity="0.5" data-swiper-parallax="-200" class="slide-reviews__text">
+										Я бы хотел отметить главное — в своей работе Александр Борисович после анализа проблемной
+										ситуации или области, которую
+										клиент хотел бы развивать, дает не только «объясняющую концепцию» и общие принципы, но
+										также практический инструментарий
+										и план действий, которые действительно работают и дают ожидаемые результаты!
+									</div>
+								</div>
+								<div class="reviews__slide swiper-slide slide-reviews">
+									<div class="slide-reviews__top">
+										<div class="slide-reviews__avatar">
+											<picture><source srcset="img/reviews/03.webp" type="image/webp"><img src="img/reviews/03.jpeg" alt="image"></picture>
+										</div>
+										<div class="slide-reviews__info">
+											<div class="slide-reviews__wrapper">
+												<div data-swiper-parallax-opacity="0.5" data-swiper-parallax="-100" class="slide-reviews__name">АЛЕКСЕЙ ЛЯКИН</div>
+												<div data-swiper-parallax-opacity="0.5" data-swiper-parallax="-150" class="slide-reviews__role">ВИЦЕ-ПРЕЗИДЕНТ - ДИРЕКТОР КАЗНАЧЕЙСТВА ПАО СБЕРБАНК
+												</div>
+											</div>
+										</div>
+									</div>
+									<div data-swiper-parallax-opacity="0.5" data-swiper-parallax="-200" class="slide-reviews__text">
+										Александр Зайцев - Executive coach, несколько лет успешно работающий с руководством
+										департамента казначейства ПАО
+										Сбербанк. Его высокий профессионализм и разносторонний опыт, готовность вникать в контекст
+										и искать корень проблемы, а
+										также нацеленность на решение конкретных задач подопечного сотрудника позволяют всем, кто
+										с ним работает значительно
+										повысить свою результативность. Особенно хочется отметить богатый и, часто, авторский
+										инструментарий, которым пользуется
+										Александр Борисович для решения поставленных задач.
 									</div>
 								</div>
 							</div>
@@ -159,7 +197,7 @@
 				<section class="coaching">
 					<div class="coaching__container">
 						<div class="coaching__content">
-							<h2 class="coaching__subtitle subtitle">
+							<h2 data-watch data-watch-once data-transform-to-top-long class="coaching__subtitle subtitle">
 								Области развития в коучинге
 							</h2>
 							<div data-da=".coaching__container,991.98,last" class="coaching__navigation">
@@ -171,7 +209,16 @@
 								</button>
 							</div>
 							<div class="coaching__decor decor">
-								<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+								<span data-goto=".hero" data-goto-header></span>
+								<span data-goto=".video" data-goto-header></span>
+								<span data-goto=".reviews" data-goto-header></span>
+								<span data-goto=".coaching" data-goto-header></span>
+								<span data-goto=".strategic-sessions" data-goto-header></span>
+								<span data-goto=".clients" data-goto-header></span>
+								<span data-goto=".book" data-goto-header></span>
+								<span data-goto=".publishing" data-goto-header></span>
+								<span data-goto=".faq" data-goto-header></span>
+								<span data-goto=".contacts" data-goto-header></span>
 							</div>
 						</div>
 						<div class="coaching__slider swiper">
@@ -215,8 +262,8 @@
 				<div class="strategic-sessions__container">
 					<div class="strategic-sessions__header">
 						<div class="strategic-sessions__content">
-							<h2 class="strategic-sessions__subtitle subtitle">СТРАТЕГИЧЕСКИЕ СЕССИИ</h2>
-							<p class="strategic-sessions__description">Подробнее на сайте STRATEGICUM</p>
+							<h2 data-watch data-watch-once data-transform-to-top-long class="strategic-sessions__subtitle subtitle">СТРАТЕГИЧЕСКИЕ СЕССИИ</h2>
+							<p data-watch data-watch-once data-transform-to-top-delay class="strategic-sessions__description">Подробнее на сайте STRATEGICUM</p>
 							<a href="#" class="strategic-sessions__button">Перейти</a>
 						</div>
 						<div class="strategic-sessions__icon">
@@ -224,32 +271,47 @@
 						</div>
 					</div>
 					<div class="strategic-sessions__items">
-						<a target="_blank" href="https://www.youtube.com/watch?v=-gm0hvK8l6Q" class="strategic-sessions__item">
-							<div class="strategic-sessions__image">
-								<picture><source srcset="img/strategic-sessions/01.webp" type="image/webp"><img src="img/strategic-sessions/01.png" alt="image"></picture>
+						<div class="strategic-sessions__item">
+							<div class="video-block video-block_small">
+								<div id="player-2"></div>
+								<div data-video="-gm0hvK8l6Q" data-id="player-2" class="to-play">
+									<picture><source srcset="img/strategic-sessions/01.webp" type="image/webp"><img src="img/strategic-sessions/01.jpg" alt="icon"></picture>
+								</div>
 							</div>
 							<div class="strategic-sessions__label">
 								Для ТОП-менеджеров
 							</div>
-						</a>
-						<a target="_blank" href="https://www.youtube.com/watch?v=zTsE6AUPUkk" class="strategic-sessions__item">
-							<div class="strategic-sessions__image">
-								<picture><source srcset="img/strategic-sessions/02.webp" type="image/webp"><img src="img/strategic-sessions/02.png" alt="image"></picture>
+						</div>
+						<div class="strategic-sessions__item">
+							<div class="video-block video-block_small">
+								<div id="player-3"></div>
+								<div data-video="zTsE6AUPUkk" data-id="player-3" class="to-play to-play_small">
+									<picture><source srcset="img/strategic-sessions/02.webp" type="image/webp"><img src="img/strategic-sessions/02.jpg" alt="icon"></picture>
+								</div>
 							</div>
 							<div class="strategic-sessions__label">
 								Для собственников бизнеса
 							</div>
-						</a>
+						</div>
 					</div>
 					<div class="strategic-sessions__decor decor">
-						<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+						<span data-goto=".hero" data-goto-header></span>
+						<span data-goto=".video" data-goto-header></span>
+						<span data-goto=".reviews" data-goto-header></span>
+						<span data-goto=".coaching" data-goto-header></span>
+						<span data-goto=".strategic-sessions" data-goto-header></span>
+						<span data-goto=".clients" data-goto-header></span>
+						<span data-goto=".book" data-goto-header></span>
+						<span data-goto=".publishing" data-goto-header></span>
+						<span data-goto=".faq" data-goto-header></span>
+						<span data-goto=".contacts" data-goto-header></span>
 					</div>
 				</div>
 			</section>
 			<section class="clients">
 				<div class="clients__container">
 					<div class="clients__header">
-						<h2 class="clients__subtitle subtitle subtitle_color">КЛЮЧЕВЫЕ КЛИЕНТЫ</h2>
+						<h2 data-watch data-watch-once data-transform-to-top-long class="clients__subtitle subtitle subtitle_color">КЛЮЧЕВЫЕ КЛИЕНТЫ</h2>
 						<div class="clients__navigations">
 							<button type="button" class="clients-prev">
 								<img src="img/clients/arrow-slider.svg" alt="icon">
@@ -275,7 +337,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="clients__slider swiper">
+					<div class="clients__slider-bottom swiper">
 						<div class="clients__wrapper swiper-wrapper">
 							<div class="clients__slide swiper-slide">
 								<picture><source srcset="img/clients/05.webp" type="image/webp"><img src="img/clients/05.png" alt="image"></picture>
@@ -292,16 +354,25 @@
 						</div>
 					</div>
 					<div class="clients__decor decor">
-						<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+						<span data-goto=".hero" data-goto-header></span>
+						<span data-goto=".video" data-goto-header></span>
+						<span data-goto=".reviews" data-goto-header></span>
+						<span data-goto=".coaching" data-goto-header></span>
+						<span data-goto=".strategic-sessions" data-goto-header></span>
+						<span data-goto=".clients" data-goto-header></span>
+						<span data-goto=".book" data-goto-header></span>
+						<span data-goto=".publishing" data-goto-header></span>
+						<span data-goto=".faq" data-goto-header></span>
+						<span data-goto=".contacts" data-goto-header></span>
 					</div>
 				</div>
 			</section>
 			<section class="book">
 				<div class="book__container">
 					<div class="book__content">
-						<h2 class="book__subtitle subtitle subtitle_color">Книга</h2>
-						<p class="book__description">Energy management. Личная эффективность на 100%</p>
-						<p class="book__text">
+						<h2 data-watch data-watch-once data-transform-to-top-long class="book__subtitle subtitle subtitle_color">Книга</h2>
+						<p data-watch data-watch-once data-transform-to-top-delay="" class="book__description">Energy management. Личная эффективность на 100%</p>
+						<p data-watch data-watch-once data-transform-to-top-delay class="book__text">
 							В эпоху неопределенности и многозадачности критически важным становится умение поддерживать себя в
 							работоспособном
 							состоянии. С моей точки зрения, это состояние представляет собой так называемый баланс напряжений.
@@ -333,18 +404,27 @@
 							</div>
 						</form>
 						<div class="book__decor decor">
-							<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+							<span data-goto=".hero" data-goto-header></span>
+							<span data-goto=".video" data-goto-header></span>
+							<span data-goto=".reviews" data-goto-header></span>
+							<span data-goto=".coaching" data-goto-header></span>
+							<span data-goto=".strategic-sessions" data-goto-header></span>
+							<span data-goto=".clients" data-goto-header></span>
+							<span data-goto=".book" data-goto-header></span>
+							<span data-goto=".publishing" data-goto-header></span>
+							<span data-goto=".faq" data-goto-header></span>
+							<span data-goto=".contacts" data-goto-header></span>
 						</div>
 					</div>
-					<div class="book__image">
+					<a target="_blank" href="biography.html" class="book__image">
 						<picture><source srcset="img/book/main.webp" type="image/webp"><img src="img/book/main.jpg" alt="image"></picture>
-					</div>
+					</a>
 				</div>
 			</section>
 			<section class="publishing">
 				<div class="publishing__container">
 					<div class="publishing__header">
-						<h2 class="publishing__subtitle subtitle subtitle_color">Публикации</h2>
+						<h2 data-watch data-watch-once data-transform-to-top-long class="publishing__subtitle subtitle subtitle_color">Публикации</h2>
 						<div data-da=".publishing__container,991.98,last" class="publishing__navigation">
 							<button type="button" class="publishing__prev">
 								<img src="img/clients/arrow-slider.svg" alt="icon">
@@ -357,7 +437,7 @@
 					<div class="publishing__slider swiper">
 						<div class="publishing__wrapper swiper-wrapper">
 							<div class="publishing__slide swiper-slide slide-publishing">
-								<div class="slide-publishing__header">
+								<div data-swiper-parallax-opacity="0.5" data-swiper-parallax="-100" class="slide-publishing__header">
 									<div class="slide-publishing__image">
 										<picture><source srcset="img/publishing/01.webp" type="image/webp"><img src="img/publishing/01.png" alt="image"></picture>
 									</div>
@@ -365,43 +445,83 @@
 										Ложный выбор. Стоит ли бежать из корпоративного рабства в собственный бизнес
 									</div>
 								</div>
-								<p class="slide-publishing__text">
+								<p data-swiper-parallax-opacity="0.5" data-swiper-parallax="-150" class="slide-publishing__text">
 									Что, если к управленцу вдруг приходит осознание, что ему чужд корпоративный мир? Возможно. Но
 									вот в чем дело: почти
 									всегда человек, добравшийся до позиции директора по развитию или CЕO в крупной компании,
 									имеет склонность к жизни в
 									бизнес-иерархии
 								</p>
-								<a href="#" class="slide-publishing__link">Перейти к материалу</a>
+								<a data-swiper-parallax-opacity="0.5" data-swiper-parallax="-200" target="_blank" href="https://www.forbes.ru/karera-i-svoy-biznes/352219-lozhnyy-vybor-stoit-li-bezhat-iz-korporativnogo-rabstva-v-sobstvennyy" class="slide-publishing__link">Перейти к материалу</a>
 							</div>
 							<div class="publishing__slide swiper-slide slide-publishing">
-								<div class="slide-publishing__header">
+								<div data-swiper-parallax-opacity="0.5" data-swiper-parallax="-100" class="slide-publishing__header">
 									<div class="slide-publishing__image">
-										<picture><source srcset="img/publishing/01.webp" type="image/webp"><img src="img/publishing/01.png" alt="image"></picture>
+										<picture><source srcset="img/publishing/some.webp" type="image/webp"><img src="img/publishing/some.png" alt="image"></picture>
 									</div>
 									<div class="slide-publishing__label">
-										Ложный выбор. Стоит ли бежать из корпоративного рабства в собственный бизнес
+										Избыток энергии может быть опасен для жизни
 									</div>
 								</div>
-								<p class="slide-publishing__text">
-									Что, если к управленцу вдруг приходит осознание, что ему чужд корпоративный мир? Возможно. Но
-									вот в чем дело: почти
-									всегда человек, добравшийся до позиции директора по развитию или CЕO в крупной компании,
-									имеет склонность к жизни в
-									бизнес-иерархии
+								<p data-swiper-parallax-opacity="0.5" data-swiper-parallax="-150" class="slide-publishing__text">
+									Считается, что восполнение запасов жизненных сил — это основная сложность в создании
+									энергетического баланса. Приходя ко
+									мне за консультацией, многие руководители просят сконцентрироваться на том, где взять нужные
+									силы для движения вперед.
 								</p>
-								<a href="#" class="slide-publishing__link">Перейти к материалу</a>
+								<a data-swiper-parallax-opacity="0.5" data-swiper-parallax="-200" target="_blank" href="https://big-i.ru/karera/upravlenie-vremenem/p17524/" class="slide-publishing__link">Перейти к материалу</a>
+							</div>
+							<div class="publishing__slide swiper-slide slide-publishing">
+								<div data-swiper-parallax-opacity="0.5" data-swiper-parallax="-100" class="slide-publishing__header">
+									<div class="slide-publishing__image">
+										<picture><source srcset="img/publishing/some.webp" type="image/webp"><img src="img/publishing/some.png" alt="image"></picture>
+									</div>
+									<div class="slide-publishing__label">
+										Управление энергией: новый подход к личной эффективности
+									</div>
+								</div>
+								<p data-swiper-parallax-opacity="0.5" data-swiper-parallax="-150" class="slide-publishing__text">
+									Четыре года назад в моей жизни произошло событие, заставившее меня в корне переосмыслить свои
+									приоритеты. У меня вот-вот
+									должен был появиться ребенок.
+								</p>
+								<a data-swiper-parallax-opacity="0.5" data-swiper-parallax="-200" target="_blank" href="https://big-i.ru/karera/upravlenie-vremenem/p17059/" class="slide-publishing__link">Перейти к материалу</a>
+							</div>
+							<div class="publishing__slide swiper-slide slide-publishing">
+								<div data-swiper-parallax-opacity="0.5" data-swiper-parallax="-100" class="slide-publishing__header">
+									<div class="slide-publishing__image">
+										<picture><source srcset="img/publishing/some.webp" type="image/webp"><img src="img/publishing/some.png" alt="image"></picture>
+									</div>
+									<div class="slide-publishing__label">
+										Почему так сложно начать новую жизнь с понедельника?
+									</div>
+								</div>
+								<p data-swiper-parallax-opacity="0.5" data-swiper-parallax="-150" class="slide-publishing__text">
+									В управлении энергией есть еще один важный нюанс, который следует затронуть в моем блоге. Это
+									вопрос о том, как все-таки
+									начать и не бросить начатое.
+								</p>
+								<a data-swiper-parallax-opacity="0.5" data-swiper-parallax="-200" target="_blank" href="https://big-i.ru/karera/upravlenie-vremenem/p17288/" class="slide-publishing__link">Перейти к материалу</a>
 							</div>
 						</div>
 					</div>
 					<div class="publishing__decor decor">
-						<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+						<span data-goto=".hero" data-goto-header></span>
+						<span data-goto=".video" data-goto-header></span>
+						<span data-goto=".reviews" data-goto-header></span>
+						<span data-goto=".coaching" data-goto-header></span>
+						<span data-goto=".strategic-sessions" data-goto-header></span>
+						<span data-goto=".clients" data-goto-header></span>
+						<span data-goto=".book" data-goto-header></span>
+						<span data-goto=".publishing" data-goto-header></span>
+						<span data-goto=".faq" data-goto-header></span>
+						<span data-goto=".contacts" data-goto-header></span>
 					</div>
 			</section>
 			<section class="faq">
 				<div class="faq__container">
-					<h2 class="faq__subtitle subtitle">FAQ</h2>
-					<p class="faq__text">
+					<h2 data-watch data-watch-once data-transform-to-top-long class="faq__subtitle subtitle">FAQ</h2>
+					<p data-watch data-watch-once data-transform-to-top-delay class="faq__text">
 						Ответы на часто задаваемые вопросы
 					</p>
 					<div data-spollers class="spollers">
@@ -520,13 +640,22 @@
 						<span>Показать еще</span>
 					</button>
 					<div class="faq__decor decor">
-						<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+						<span data-goto=".hero" data-goto-header></span>
+						<span data-goto=".video" data-goto-header></span>
+						<span data-goto=".reviews" data-goto-header></span>
+						<span data-goto=".coaching" data-goto-header></span>
+						<span data-goto=".strategic-sessions" data-goto-header></span>
+						<span data-goto=".clients" data-goto-header></span>
+						<span data-goto=".book" data-goto-header></span>
+						<span data-goto=".publishing" data-goto-header></span>
+						<span data-goto=".faq" data-goto-header></span>
+						<span data-goto=".contacts" data-goto-header></span>
 					</div>
 				</div>
 			</section>
 			<section class="contacts">
 				<div class="contacts__container">
-					<h2 class="contacts__subtitle subtitle">Контакты</h2>
+					<h2 data-watch data-watch-once data-transform-to-top-long class="contacts__subtitle subtitle">Контакты</h2>
 					<div class="contacts__top top-contacts">
 						<div class="top-contacts__item">
 							<a href="#" class="top-contacts__link">Москва, ул. Щербаковская, д. 3, эт. 11, офис 1110</a>
@@ -547,6 +676,9 @@
 						</div>
 					</div>
 					<div class="contacts__bottom bottom-contacts">
+						<h2 data-watch data-watch-once data-transform-to-top-long class="contacts__subtitle subtitle">
+							Оставить заявку
+						</h2>
 						<form data-popup-message="#form-message" data-ajax action="files/sendmail/sendmail.php" method="POST" class="bottom-contacts__form">
 							<div class="bottom-contacts__line">
 								<input data-required autocomplete="off" type="text" name="username" data-error="Ошибка" placeholder="Имя" class="input">
@@ -561,9 +693,6 @@
 							<button type="submit" class="bottom-contacts__button">Отправить</button>
 						</form>
 						<div class="bottom-contacts__footer">
-							<span class="bottom-contacts__send">
-								Оставить заявку
-							</span>
 							<div data-da=".chk,767.98,last" class="new">
 								<form>
 									<div class="form-group">
@@ -575,7 +704,16 @@
 						</div>
 					</div>
 					<div class="contacts__decor decor">
-						<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+						<span data-goto=".hero" data-goto-header></span>
+						<span data-goto=".video" data-goto-header></span>
+						<span data-goto=".reviews" data-goto-header></span>
+						<span data-goto=".coaching" data-goto-header></span>
+						<span data-goto=".strategic-sessions" data-goto-header></span>
+						<span data-goto=".clients" data-goto-header></span>
+						<span data-goto=".book" data-goto-header></span>
+						<span data-goto=".publishing" data-goto-header></span>
+						<span data-goto=".faq" data-goto-header></span>
+						<span data-goto=".contacts" data-goto-header></span>
 					</div>
 				</div>
 			</section>
@@ -604,7 +742,7 @@
 								<a href="#" data-goto=".contacts" data-goto-header class="top-footer__link">Контакты</a>
 							</li>
 						</ul>
-						<a href="#" class="social-telegram social-telegram_size">Telegram</a>
+						<a href="https://t.me/bfgodunoff" class="social-telegram social-telegram_size">Telegram</a>
 					</div>
 				</div>
 				<div class="footer__bottom bottom-footer">
@@ -630,7 +768,7 @@
 							</a>
 						</li>
 						<li class="bottom-footer__item">
-							<a target="_blank" href="#" class="bottom-footer__link">
+							<a target="_blank" href="https://www.youtube.com/@zaytsevab" class="bottom-footer__link">
 								youtube.com/zaytsevab
 							</a>
 						</li>
@@ -660,7 +798,62 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230918125714"></script>
+	<script src="js/app.min.js?_v=20230919010106"></script>
+	<script>
+		// 2. This code loads the IFrame Player API code asynchronously.
+		var tag = document.createElement('script');
+
+		tag.src = "https://www.youtube.com/iframe_api";
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+		// 3. This function creates an <iframe> (and YouTube player)
+		//    after the API code downloads.
+		var player;
+		$('.to-play').click(function() {
+
+
+			let btn = $(this),
+				videoId = btn.data('video'),
+				playerId = btn.data('id'),
+				player = new YT.Player(playerId, {
+					videoId: videoId,
+					height: '538',
+					width: '956',
+					playerVars: {
+						'playsinline': 1,
+						'autoplay': 0,
+						'controls': 1,
+					},
+					events: {
+						'onReady': onPlayerReady,
+					}
+				});
+		})
+
+
+		function onPlayerReady(event) {
+			let video = event.target.getIframe();
+			$(video).siblings('.to-play').addClass('removed')
+			$(video).siblings('.video-block__container').addClass('removed')
+			event.target.playVideo();
+		}
+
+
+
+		var done = false;
+
+		function onPlayerStateChange(event) {
+			if (event.data == YT.PlayerState.PLAYING && !done) {
+				setTimeout(stopVideo, 6000);
+				done = true;
+			}
+		}
+
+		function stopVideo() {
+			player.stopVideo();
+		}
+	</script>
 </body>
 
 </html>
