@@ -1637,11 +1637,26 @@ body::after {
 
 .video-block {
   position: relative;
+  background-color: #050505;
 }
 
 .video-block-screen {
   position: relative;
   height: 100%;
+}
+
+.video-block-screen::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 74px;
+  height: 74px;
+  background: url("../img/video/play-icon.svg") center/contain no-repeat;
 }
 
 .video-block-screen img {
@@ -1678,13 +1693,50 @@ body::after {
   z-index: 9;
 }
 
+.video-block__des {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  gap: 2.1875rem;
+  border-radius: 21px;
+  background: #050505;
+  -webkit-backdrop-filter: blur(15.5px);
+          backdrop-filter: blur(15.5px);
+  border-radius: 21px;
+  border: 0.3px solid #fff;
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+  padding: 25px;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  line-height: 140%;
+  /* 33.6px */
+  letter-spacing: 0.36px;
+}
+
+.video-block__des::before {
+  content: "";
+  width: 44px;
+  height: 44px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 2.75rem;
+          flex: 0 1 2.75rem;
+  background: url("../img/quotes.svg") center/contain no-repeat;
+}
+
 .video-block.active .video-block-iframe {
   display: block;
 }
 
 .video-block-iframe iframe {
   width: 100%;
-  height: 102%;
+  height: 100%;
 }
 
 .coaching {
@@ -1991,6 +2043,16 @@ body::after {
         -ms-flex: 0 1 46.4375rem;
             flex: 0 1 46.4375rem;
   }
+
+  .video-block__des {
+    position: absolute;
+    z-index: 2;
+    bottom: 10%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    left: 50%;
+  }
 }
 
 @media (min-width: 47.99875em) and (min-width: 99.375em) {
@@ -2292,6 +2354,10 @@ body::after {
 
   .clients__decor {
     padding-top: 6.25rem;
+  }
+
+  .video-block__des {
+    font-size: 1.5rem;
   }
 
   .coaching {
@@ -2608,6 +2674,10 @@ body::after {
     padding-top: 3.125rem;
   }
 
+  .video-block__des {
+    font-size: 0.75rem;
+  }
+
   .coaching {
     padding-bottom: 4.6875rem;
   }
@@ -2881,6 +2951,25 @@ body::after {
 
   .book__image img {
     max-width: 31.25rem;
+  }
+
+  .video-block-screen::after {
+    width: 40px;
+  }
+
+  .video-block__des {
+    gap: 0.9375rem;
+  }
+
+  .video-block__des::before {
+    width: 30px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 1.875rem;
+            flex: 0 0 1.875rem;
+  }
+
+  .video-block__des {
+    padding: 20px;
   }
 
   .coaching__container {
@@ -3241,6 +3330,28 @@ body::after {
 
   .clients-next img {
     width: 36px;
+  }
+
+  .video-block-screen::after {
+    width: 30px;
+  }
+
+  .video-block__des {
+    margin-top: 3.125rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .video-block__des::before {
+    width: 20px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 1.25rem;
+            flex: 0 0 1.25rem;
+  }
+
+  .video-block__des {
+    padding: 10px 1.25rem;
   }
 
   .publishing__navigation {
@@ -3918,6 +4029,18 @@ body::after {
 @supports not (padding-top: clamp( 3.125rem , 2.3557692308rem  +  3.8461538462vw , 6.25rem )) {
     .clients__decor {
       padding-top: calc(3.125rem + 3.125 * (100vw - 20rem) / 81.25);
+    }
+}
+
+@supports (font-size: clamp( 0.75rem , 0.5653846154rem  +  0.9230769231vw , 1.5rem )) {
+    .video-block__des {
+      font-size: clamp( 0.75rem , 0.5653846154rem  +  0.9230769231vw , 1.5rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.5653846154rem  +  0.9230769231vw , 1.5rem )) {
+    .video-block__des {
+      font-size: calc(0.75rem + 0.75 * (100vw - 20rem) / 81.25);
     }
 }
 
