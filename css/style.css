@@ -1725,8 +1725,8 @@ body::after {
   width: 44px;
   height: 44px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 2.75rem;
-          flex: 0 1 2.75rem;
+      -ms-flex: 0 0 2.75rem;
+          flex: 0 0 2.75rem;
   background: url("../img/quotes.svg") center/contain no-repeat;
 }
 
