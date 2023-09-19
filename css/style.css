@@ -1924,6 +1924,10 @@ body::after {
   background: url("../img/quotes.svg") center/contain no-repeat;
 }
 
+.video-block__container {
+  padding: 0 0.3125rem;
+}
+
 .video-block.active .video-block-iframe {
   display: block;
 }
